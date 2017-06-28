@@ -29,11 +29,13 @@
 
             <RadioButton
                 android:id="@+id/Q1A1"
+                android:onClick="question1"
                 style="@style/RadioButton"
                 android:text="@string/q1a1" />
 
             <RadioButton
                 android:id="@+id/Q1A2"
+                android:onClick="question1"
                 style="@style/RadioButton"
                 android:text="@string/q1a2" />
 
@@ -60,12 +62,14 @@
 
             <RadioButton
                 android:id="@+id/Q2A2"
+                android:onClick="question2"
                 style="@style/RadioButton"
                 android:text="@string/q2a2" />
 
             <RadioButton
                 android:id="@+id/Q2A3"
                 style="@style/RadioButton"
+                android:onClick="question2"
                 android:text="@string/q2a3" />
         </RadioGroup>
 
@@ -79,11 +83,13 @@
             <RadioButton
                 android:id="@+id/Q3A1"
                 style="@style/RadioButton"
+                android:onClick="question3"
                 android:text="@string/q3a1" />
 
             <RadioButton
                 android:id="@+id/Q3A2"
                 style="@style/RadioButton"
+                android:onClick="question3"
                 android:text="@string/q3a2" />
 
             <RadioButton
@@ -124,6 +130,7 @@
 
             <RadioButton
                 android:id="@+id/Q5A1"
+                android:onClick="question5"
                 style="@style/RadioButton"
                 android:text="@string/q5a1" />
 
@@ -135,6 +142,7 @@
 
             <RadioButton
                 android:id="@+id/Q5A3"
+                android:onClick="question5"
                 style="@style/RadioButton"
                 android:text="@string/q5a3" />
         </RadioGroup>
@@ -155,15 +163,15 @@
             <RadioButton
                 android:id="@+id/Q6A2"
                 style="@style/RadioButton"
+                android:onClick="question6"
                 android:text="@string/q6a2" />
 
             <RadioButton
                 android:id="@+id/Q6A3"
+                android:onClick="question6"
                 style="@style/RadioButton"
                 android:text="@string/q6a3" />
         </RadioGroup>
-
-        <ImageView style="@style/ImageNormal" />
 
         <TextView
             style="@style/Text"
@@ -187,7 +195,6 @@
             android:onClick="question7"
             android:text="@string/q7a3" />
 
-        <ImageView style="@style/ImageNormal" />
 
         <TextView
             style="@style/Text"
@@ -198,6 +205,7 @@
 
             <RadioButton
                 android:id="@+id/Q8A1"
+                android:onClick="question8"
                 style="@style/RadioButton"
                 android:text="@string/q8a1" />
 
@@ -209,6 +217,7 @@
 
             <RadioButton
                 android:id="@+id/Q8A3"
+                android:onClick="question8"
                 style="@style/RadioButton"
                 android:text="@string/q8a3" />
         </RadioGroup>
