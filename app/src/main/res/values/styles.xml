@@ -7,45 +7,44 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="LayoutMain" >
+
+    <style name="LayoutMain">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <!--<item name="android:background">@drawable/nba</item>-->
-        <!--<item name="android:background">@android:color/black</item>-->
-        <item name="android:padding">20dp</item>
+        <item name="android:padding">@dimen/padding_size_layout</item>
         <item name="android:fillViewport">true</item>
     </style>
 
-    <style name="LinearLayout" >
+    <style name="LinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="MainHeading" >
+    <style name="MainHeading">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">NBA Quiz</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:paddingTop">80dp</item>
-        <item name="android:textColor">#ffa500</item>
-        <item name="android:textSize">44sp</item>
+        <item name="android:paddingTop">@dimen/padding_size_top_heading</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/text_size_heading</item>
     </style>
 
     <style name="ImageNormal">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingTop">@dimen/padding_size_top</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="HeadingText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingTop">@dimen/padding_size_top</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:textColor">#ffa500</item>
+        <item name="android:textColor">@color/colorOrange</item>
     </style>
 
     <style name="HeadingImage">
@@ -57,26 +56,25 @@
     <style name="Text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">40dp</item>
-        <item name="android:paddingBottom">40dp</item>
-        <item name="android:textColor">#ffa500</item>
+        <item name="android:paddingTop">@dimen/padding_size_top</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom_text</item>
+        <item name="android:textColor">@color/colorOrange</item>
     </style>
 
     <style name="TextAnswerText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">40dp</item>
-        <item name="android:paddingBottom">20dp</item>
-        <item name="android:textColor">#ffa500</item>
-
+        <item name="android:paddingTop">@dimen/padding_size_top</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom_answer_text</item>
+        <item name="android:textColor">@color/colorOrange</item>
     </style>
 
     <style name="EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">40dp</item>
-        <item name="android:textColorHint">#ffa500</item>
-        <item name="android:textColor">#ffa500</item>
+        <item name="android:paddingTop">@dimen/padding_size_top</item>
+        <item name="android:textColorHint">@color/colorOrange</item>
+        <item name="android:textColor">@color/colorOrange</item>
         <item name="android:inputType">textCapWords</item>
     </style>
 
@@ -89,23 +87,23 @@
     <style name="RadioButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:buttonTint">#ffa500</item>
-        <item name="android:textColor">#ffa500</item>
+        <item name="android:buttonTint">@color/colorOrange</item>
+        <item name="android:textColor">@color/colorOrange</item>
     </style>
 
     <style name="CheckBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:buttonTint">#ffa500</item>
-        <item name="android:textColor">#ffa500</item>
+        <item name="android:buttonTint">@color/colorOrange</item>
+        <item name="android:textColor">@color/colorOrange</item>
     </style>
 
 
     <style name="Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">40dp</item>
-        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_button</item>
+        <item name="android:layout_marginBottom">@dimen/margin_button</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
