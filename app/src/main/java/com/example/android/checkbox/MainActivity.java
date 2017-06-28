@@ -2,6 +2,7 @@ package com.example.android.checkbox;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -9,6 +10,8 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import static com.example.android.checkbox.R.string.points;
+import static com.example.android.checkbox.R.string.q1;
+import static com.example.android.checkbox.R.string.q3;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -56,28 +59,29 @@ public class MainActivity extends AppCompatActivity {
     // Question 1 radio buttons
     public int question1(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((RadioButton) findViewById(R.id.Q1A3)).isChecked();
 
         // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.Q1A3:
-                if (checked)
-                    q1points += 1;
+
+        if (checked) {
+            q1points = 1;
+        } else {
+            q1points = 0;
         }
         return q1points;
     }
 
-
     // Question 2 radio buttons
     public int question2(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((RadioButton) findViewById(R.id.Q2A1)).isChecked();
+
 
         // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.Q2A1:
-                if (checked)
-                    q2points += 1;
+        if (checked) {
+            q2points = 1;
+        } else {
+            q2points = 0;
         }
         return q2points;
     }
@@ -85,14 +89,15 @@ public class MainActivity extends AppCompatActivity {
     // Question 3 radio buttons
     public int question3(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((RadioButton) findViewById(R.id.Q3A3)).isChecked();
 
         // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.Q3A3:
-                if (checked)
-                    q3points += 1;
+        if (checked) {
+            q3points = 1;
+        } else {
+            q3points = 0;
         }
+
         return q3points;
     }
 
@@ -107,21 +112,22 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxPerson3 = (CheckBox) findViewById(R.id.person3);
         boolean checkedPerson3 = checkBoxPerson3.isChecked();
         if (checkedPerson1 && checkedPerson2 && checkedPerson3) {
-            q6points += 1;
+            q4points = 1;
+        } else {
+            q4points = 0;
         }
         return q4points;
     }
 
     // Question 5 Radio Buttons
     public int question5(View view) {
+        boolean checked = ((RadioButton) findViewById(R.id.Q5A2)).isChecked();
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
 
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.Q5A2:
-                if (checked)
-                    q5points += 1;
+        if (checked) {
+            q5points = 1;
+        } else {
+            q5points = 0;
         }
         return q5points;
     }
@@ -129,14 +135,15 @@ public class MainActivity extends AppCompatActivity {
     // Question 6 Radio Buttons
     public int question6(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((RadioButton) findViewById(R.id.Q6A1)).isChecked();
 
         // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.Q6A1:
-                if (checked)
-                    q6points += 1;
+        if (checked) {
+            q6points = 1;
+        } else {
+            q6points = 0;
         }
+
         return q6points;
     }
 
@@ -151,7 +158,9 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxSun3 = (CheckBox) findViewById(R.id.object3);
         boolean checkedSun3 = checkBoxSun3.isChecked();
         if (checkedSun1 && checkedSun2 && checkedSun3) {
-            q7points += 1;
+            q7points = 1;
+        } else {
+            q7points = 0;
         }
         return q7points;
     }
@@ -159,14 +168,15 @@ public class MainActivity extends AppCompatActivity {
     // Question 8 Radio Buttons
     public int question8(View view) {
         // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        boolean checked = ((RadioButton) findViewById(R.id.Q8A2)).isChecked();
 
         // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.Q8A2:
-                if (checked)
-                    q8points += 1;
+        if (checked) {
+            q8points = 1;
+        } else {
+            q8points = 0;
         }
+
         return q8points;
     }
 
