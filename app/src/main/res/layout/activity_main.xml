@@ -16,6 +16,7 @@
             android:text="@string/intro" />
 
         <EditText
+            android:onClick="question9"
             android:id="@+id/name_field"
             style="@style/EditText"
             android:hint="@string/name" />

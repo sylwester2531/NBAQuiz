@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     int q6points = 0;
     int q7points = 0;
     int q8points = 0;
+    int q9points = 0;
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("Q6A1", q6points);
         outState.putInt("Q7A3", q7points);
         outState.putInt("Q8A2", q8points);
+        outState.putInt("Q9", q8points);
     }
 
     @Override
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             q6points = savedInstanceState.getInt("Q6A1");
             q7points = savedInstanceState.getInt("Q7A3");
             q8points = savedInstanceState.getInt("Q8A1");
+            q9points = savedInstanceState.getInt("Q9");
         }
 
     }
@@ -180,11 +184,21 @@ public class MainActivity extends AppCompatActivity {
         return q8points;
     }
 
+    public int question9(View view) {
+        EditText question9 = (EditText) findViewById(R.id.name_field);
+        if (question9.getText().toString().equals("android")) {
+            q9points = 1;
+        } else {
+            q9points = 0;
+        }
+        return q9points;
+    }
+
     // Displays Name and Score
     public int results(View View) {
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
-        Toast.makeText(getApplicationContext(), getString(R.string.hey) + name + getString(R.string.you) + (q1points + q2points + q3points + q4points + q5points + q6points + q7points + q8points) + getString(points), Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), getString(R.string.hey) + name + getString(R.string.you) + (q1points + q2points + q3points + q4points + q5points + q6points + q7points + q8points + q9points) + getString(points), Toast.LENGTH_LONG).show();
         q1points = 0;
         q2points = 0;
         q3points = 0;
@@ -193,6 +207,7 @@ public class MainActivity extends AppCompatActivity {
         q6points = 0;
         q7points = 0;
         q8points = 0;
+        q9points = 0;
         return (q1points + q2points + q3points + q4points + q5points + q6points + q7points + q8points);
 
     }
