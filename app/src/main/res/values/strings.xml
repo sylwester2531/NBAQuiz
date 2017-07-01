@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">NBA Test</string>
     <string name="intro">Test your NBA knowledge with the following quiz</string>
-    <string name="name">Click Here To Add Your Name</string>
+    <string name="name">Name the most popular mobile operating system: </string>
     <string name="q1">1. What is the name of big star the basketball player with 23 numbe on the t-shirt ?</string>
     <string name="q1a1" translatable="false">Kyrie Irving</string>
     <string name="q1a2" translatable="false">LeBron James</string>
@@ -37,5 +37,5 @@
     <string name="results">Results</string>
     <string name="hey" translatable="false">Hey \u0020</string>
     <string name="you">! You got \u0020</string>
-    <string name="points">\u0020 points out of 8!</string>
+    <string name="points">\u0020 points out of 9!</string>
 </resources>
